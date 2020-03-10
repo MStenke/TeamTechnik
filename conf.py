@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Nutanix Tech Summit 2020'
+project = u'Nutanix Databases with Era Bootcamp'
 copyright = u'2020 Nutanix'
 author = u'Nutanix Global Technical Enablement'
 
@@ -88,7 +88,6 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 #html_theme = "sphinx_rtd_theme"
-#html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_theme = 'bootstrap'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 

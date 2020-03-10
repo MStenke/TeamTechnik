@@ -1,29 +1,4 @@
-.. title:: Nutanix Global Tech Summit 2020
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Event Info
-   :name: _info
-   :hidden:
-
-   info/clusteraccess
-   info/clusterinfo
-   info/validation
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Private Cloud
-   :name: _privatecloud
-   :hidden:
-
-   pc/dayinlife/dayinlife
-   prismops/prismops_capacity_lab/prismops_capacity_lab
-   prismops/prismops_rightsize_lab/prismops_rightsize_lab
-   pc/security/security
-   pc/files/files
-   pc/flow_secure_fiesta/flow_secure_fiesta
-   beam_cost_governance/beam_cost_governance
-   pc/cleanup/cleanup
+.. title:: Nutanix Databases with Era Bootcamp
 
 .. toctree::
    :maxdepth: 2
@@ -31,102 +6,259 @@
    :name: _dbs
    :hidden:
 
-   db/gettingstarted/gettingstarted
-   db/mssqldeploy/mssqldeploy
-   db/cloning/cloning
-   db/aag/aag
-   db/oraclepatch/oraclepatch
-   db/flow_secure_fiesta/flow_secure_fiesta
-   db/flow_isolate_fiesta/flow_isolate_fiesta
-   prismops/prismops_blue_medora_lab/prismops_blue_medora_lab
-   db/cleanup/cleanup
+   gettingstarted/gettingstarted
+   mssqldeploy/mssqldeploy
+   cloning/cloning
+   aag/aag
+   flow_secure_fiesta/flow_secure_fiesta
+   flow_isolate_fiesta/flow_isolate_fiesta
 
 .. toctree::
-   :maxdepth: 2
-   :caption: End User Computing - Xi Frame
-   :name: _eucframe
-   :hidden:
+  :maxdepth: 2
+  :caption: Era Postgres Labs
+  :name: _era_postgres_labs
+  :hidden:
 
-   eucframe/gettingstarted/gettingstarted
-   eucframe/move/move
-   eucframe/goldimage/goldimage
-   eucframe/deploycca/deploycca
-   eucframe/manage/manage
-   eucframe/framefiles/framefiles
-   eucframe/flow_secure_desktops/flow_secure_desktops
-   prismops/prismops_rightsize_frm_lab/prismops_rightsize_euc_lab
-   eucframe/cleanup/cleanup
+  era_provision_postgresdb/era_provision_postgresdb
+  era_clone_postgresdb/era_clone_postgresdb
+  era_rest_api/era_rest_api
 
 .. toctree::
-   :maxdepth: 2
-   :caption: End User Computing - Citrix
-   :name: _euccitrix
-   :hidden:
+  :maxdepth: 2
+  :caption: Appendix
+  :name: _appendix
+  :hidden:
 
-   euccitrix/gettingstarted/gettingstarted
-   euccitrix/move/move
-   euccitrix/goldimage/goldimage
-   euccitrix/pdesktops/pdesktops
-   euccitrix/npdesktops/npdesktops
-   euccitrix/updatecatalog/updatecatalog
-   euccitrix/files/files
-   euccitrix/flow_quarantine_vm/flow_quarantine_vm
-   euccitrix/flow_secure_desktops/flow_secure_desktops
-   prismops/prismops_rightsize_ctx_lab/prismops_rightsize_euc_lab
-   euccitrix/cleanup/cleanup
+  tools_vms/windows_tools_vm
+  tools_vms/linux_tools_vm
+  appendix/glossary
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Bonus Labs
-   :name: _bonus
-   :hidden:
+.. _getting_started:
 
-   beam_security_compliance/beam_security_compliance
-   calm_karbon_cicd/calm_karbon_cicd
-   xileap/xileap
-   splunkobjectslab/splunkobjectslab
-   mine/hycu/hycu/hycu
-   peer/peer
-   mine/veeam/veeam
+---------------
+Getting Started
+---------------
 
-   .. /mine/hycu/protecting-physical/protectingphysical
+Welcome to the Nutanix Databases with Era Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix technologies and many common management tasks.
 
-..   /mine/hycu/reporting/reporting
-..   /mine/hycu/self-service/selfservice
-..   db/lab1/rstfile
+You will explore Prism Element and become familiar with its features and navigation. You will use Prism to perform basic cluster administration tasks, including storage and networking. You will also walk through basic VM deployment and management tasks with Prism and AHV. Finally, you will explore VM data protection, including snapshots and replication. The instructor explains the exercises and answers any additional questions that you may have.
 
-.. raw:: html
+At the end of the bootcamp, attendees should understand the Core concepts and technologies that make up the Nutanix Enterprise Cloud stack and should be well prepared for a hosted or onsite proof-of-concept (POC) engagement.
 
-  <br><center><img src="https://get-ahv-images.s3.amazonaws.com/vegasbanner.png" alt="Welcome to Nutanix Global Tech Summit 2020"></center><br>
+What's New
+++++++++++
 
-**Welcome!** This year we're celebrating how we power customer use cases by exposing you to multiple new options that will be launched as Bootcamps for you to drive prospect and customer engagement during 2020. During this year's Hands on Learning day, you'll choose and complete **at least** one of four available solution-focused lab tracks.
+- Workshop updated for the following software versions:
+    - AOS & PC 5.11.2.x
 
-.. figure:: images/labtracks.png
-   :align: center
+- Optional Lab Updates:
 
-**Private Cloud Track** - *The Private Cloud labs are highly recommended for all attendees who have been with Nutanix for less than 12 months. This track will dive into common Day 2 administrator and operator workflows, exposing the facets of Nutanix that make it ideal as a Private Cloud foundation for any organization. In these labs you will work with and learn about the core platform, AHV, Prism Pro, Files, Calm, Flow, and more.*
+Agenda
+++++++
 
-**Databases Track** - *The databases track is ideal for users looking to become more familiar with the benefits the core Nutanix platform, Era, Flow, and Prism Pro can deliver for an organizations most business critical workloads, including Microsoft SQL Server and Oracle.*
+- Introductions
+- Deploy MSSSql
+- Cloning a Databases
+- Setup a AAG
+- Using with Flow
+- Provisioning a Postgres DB
+- Cloning a Postgres DB
+- Era API Explorer
 
-**End User Computing (Xi Frame)** - *The EUX Xi Frame track walks you through an end to end deployment of Xi Frame on AHV, including gold image creation, desktop management, Files integration,  securing desktops with Flow, and more.*
+Introductions
++++++++++++++
 
-**End User Computing (Citrix)** - *The EUC Citrix track provides a pre-deployed Citrix Delivery Controller, and walks you through integration with AHV, golden image creation, desktop management, Files integration with user profiles, securing desktops with Flow, and more.*
+- Name
+- Familiarity with Nutanix
 
-**Bonus Labs** - *There are a number of standalone labs that can be completed independent of your chosen lab track. These labs can be completed at any time. There are periods of time during the solution lab tracks where you may be provisioning an application, database, etc. where you will have 15 minutes or more that can be spent working on Bonus labs, or labs from an alternate solution track.*
+Initial Setup
++++++++++++++
 
-Labs are designed to be completed by each individual, not in groups.
+- Take note of the *Passwords* being used.
+- Log into your virtual desktops (connection info below)
 
-For each lab you complete & validate, you'll be entered into a raffle to win your choice of several prizes, including: `Apple AirPods <https://www.apple.com/airpods-2nd-generation/>`_, `Samsung Galaxy Buds <https://www.samsung.com/global/galaxy/galaxy-buds/>`_, `DJI Tello EDU Drone <https://store.dji.com/product/tello-edu?vid=47091>`_, `Logitech Spotlight Presentation Remote <https://www.logitech.com/en-us/product/spotlight-presentation-remote>`_, `Sega Genesis Mini <https://genesismini.sega.com/>`_, and `CanaKit Raspberry Pi 4 Kit <https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9/>`_!
+Environment Details
++++++++++++++++++++
 
-.. figure:: images/prizes.png
-   :align: center
+Nutanix Workshops are intended to be run in the Nutanix Hosted POC environment. Your cluster will be provisioned with all necessary images, networks, and VMs required to complete the exercises.
 
-**Proctors will be regularly checking in with each table to validate completed labs. You do NOT need to wait for lab validation before proceeding to your next lab, but please take the time to clean up unneeded VMs after each lab validation.**
+Networking
+..........
 
-.. raw:: html
+Hosted POC clusters follow a standard naming convention:
 
-  <strong><font color="red">Before beginning any labs, review the following sections for important information regarding your lab specific lab environment:</font></strong>
+- **Cluster Name** - POC\ *XYZ*
+- **Subnet** - 10.**21**.\ *XYZ*\ .0
+- **Cluster IP** - 10.**21**.\ *XYZ*\ .37
 
-- :ref:`clusteraccess` - *VPN configuration for accessing the Nutanix Hosted POC network*
-- :ref:`clusterinfo` - *Your individual cluster assignment and details on how your cluster was staged*
-- :ref:`validation` - *How to get assistance with a lab*
+If provisioned from the marketing pool:
+
+- **Cluster Name** - MKT\ *XYZ*
+- **Subnet** - 10.**20**.\ *XYZ*\ .0
+- **Cluster IP** - 10.**20**.\ *XYZ*\ .37
+
+For example:
+
+- **Cluster Name** - POC055
+- **Subnet** - 10.21.55.0
+- **Cluster IP** - 10.21.55.37
+
+Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - IP Address
+     - Description
+   * - 10.21.\ *XYZ*\ .37
+     - Nutanix Cluster Virtual IP
+   * - 10.21.\ *XYZ*\ .39
+     - **PC** VM IP, Prism Central
+   * - 10.21.\ *XYZ*\ .40
+     - **DC** VM IP, NTNXLAB.local Domain Controller
+
+Each cluster is configured with 2 VLANs which can be used for VMs:
+
+.. list-table::
+  :widths: 25 25 10 40
+  :header-rows: 1
+
+  * - Network Name
+    - Address
+    - VLAN
+    - DHCP Scope
+  * - Primary
+    - 10.21.\ *XYZ*\ .1/25
+    - 0
+    - 10.21.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
+  * - Secondary
+    - 10.21.\ *XYZ*\ .129/25
+    - *XYZ1*
+    - 10.21.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
+
+Credentials
+...........
+
+.. note::
+
+  The *<Cluster Password>* is unique to each cluster and will be provided by the leader of the Workshop.
+
+.. list-table::
+   :widths: 25 35 40
+   :header-rows: 1
+
+   * - Credential
+     - Username
+     - Password
+   * - Prism Element
+     - admin
+     - *<Cluster Password>*
+   * - Prism Central
+     - admin
+     - *<Cluster Password>*
+   * - Controller VM
+     - nutanix
+     - *<Cluster Password>*
+   * - Prism Central VM
+     - nutanix
+     - *<Cluster Password>*
+
+Each cluster has a dedicated domain controller VM, **DC**, responsible for providing AD services for the **NTNXLAB.local** domain. The domain is populated with the following Users and Groups:
+
+.. list-table::
+   :widths: 25 35 40
+   :header-rows: 1
+   
+   * - Group
+     - Username(s)
+     - Password
+   * - Administrators
+     - Administrator
+     - nutanix/4u
+   * - SSP Admins
+     - adminuser01-adminuser25
+     - nutanix/4u
+   * - SSP Developers
+     - devuser01-devuser25
+     - nutanix/4u
+   * - SSP Consumers
+     - consumer01-consumer25
+     - nutanix/4u
+   * - SSP Operators
+     - operator01-operator25
+     - nutanix/4u
+   * - SSP Custom
+     - custom01-custom25
+     - nutanix/4u
+   * - Bootcamp Users
+     - user01-user25
+     - nutanix/4u
+
+Access Instructions
++++++++++++++++++++
+
+The Nutanix Hosted POC environment can be accessed a number of different ways:
+
+Lab Access User Credentials
+...........................
+
+PHX Based Clusters:
+**Username:** PHX-POCxxx-User01 (up to PHX-POCxxx-User20), **Password:** *<Provided by Instructor>*
+
+RTP Based Clusters:
+**Username:** RTP-POCxxx-User01 (up to RTP-POCxxx-User20), **Password:** *<Provided by Instructor>*
+
+Frame VDI
+.........
+
+Login to: https://frame.nutanix.com/x/labs
+
+**Nutanix Employees** - Use your **NUTANIXDC** credentials
+**Non-Employees** - Use **Lab Access User** Credentials
+
+Parallels VDI
+.................
+
+PHX Based Clusters Login to: https://xld-uswest1.nutanix.com
+
+RTP Based Clusters Login to: https://xld-useast1.nutanix.com
+
+**Nutanix Employees** - Use your **NUTANIXDC** credentials
+**Non-Employees** - Use **Lab Access User** Credentials
+
+Employee Pulse Secure VPN
+..........................
+
+Download the client:
+
+PHX Based Clusters Login to: https://xld-uswest1.nutanix.com
+
+RTP Based Clusters Login to: https://xld-useast1.nutanix.com
+
+**Nutanix Employees** - Use your **NUTANIXDC** credentials
+**Non-Employees** - Use **Lab Access User** Credentials
+
+Install the client.
+
+In Pulse Secure Client, **Add** a connection:
+
+For PHX:
+
+- **Type** - Policy Secure (UAC) or Connection Server
+- **Name** - X-Labs - PHX
+- **Server URL** - xlv-uswest1.nutanix.com
+
+For RTP:
+
+- **Type** - Policy Secure (UAC) or Connection Server
+- **Name** - X-Labs - RTP
+- **Server URL** - xlv-useast1.nutanix.com
+
+
+Nutanix Version Info
+++++++++++++++++++++
+
+- **AHV Version** - AHV 20170830.337
+- **AOS Version** - 5.11.2.3
+- **PC Version** - 5.11.2.1
