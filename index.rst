@@ -45,10 +45,9 @@
 ---------------
 Nutanix Teamtechnik Hosted PoC
 ---------------
+.. figure:: images/tt.png
 
 **Herzlich Willkommen auf dem Nutanix Hosted PoC für Teamtechnik!**
-
-.. figure:: images/tt.png
 
 Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste Test auf der Nutanix ERA Plattform, sodass neben den theoretischen Grundlagen auch erste praktische Erfahrungen gesammelt werden können wie sich eine Nutanix ERA Plattform im Live Betrieb verhält.
 
@@ -58,7 +57,7 @@ HPoC Infos:
   Hier sind generelle Infos bzgl. des Zuganges zur HPoC Umgebung und deren Konfiguration zu finden.
 
 Labs:
-  Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix ERA Umgebung besser kennenlernen kann, u.a. Einstieg in ERA, Ausrollen von MS SQL Datenbanken, MS SQL AlwaysOn AVailability Groups, Clonen von DB's, Verwenden von API's, Nutzen von Flow sowie optionale Postgres DB Labs.
+  Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix ERA Umgebung besser kennenlernen kann, u.a. Einstieg in ERA, Ausrollen von MS SQL Datenbanken, MS SQL AlwaysOn Availability Groups, Clonen von DB's, Verwenden von API's, Nutzen von Flow sowie optionale Postgres DB Labs.
 
 .. note::
    Die Beispiel Labs dienen nur zur ersten Orientierung, weitere individuelle Funktionalitäten können natürlich genauso getested werden.
