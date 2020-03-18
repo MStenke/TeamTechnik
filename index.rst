@@ -10,7 +10,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Datenbank Labs
+   :caption: MS SQL Labs
    :name: _dbs
    :hidden:
 
@@ -23,7 +23,7 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Era Postgres Labs
+  :caption: Postgres Labs
   :name: _era_postgres_labs
   :hidden:
 
@@ -51,13 +51,16 @@ Nutanix Teamtechnik Hosted PoC
 
 Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste Test auf der Nutanix ERA Plattform, sodass neben den theoretischen Grundlagen auch erste praktische Erfahrungen gesammelt werden können wie sich eine Nutanix ERA Plattform im Live Betrieb verhält.
 
-Auf der linken Seite finden Sie in der Menüstruktur zwei Hauptabschnitte:
+Auf der linken Seite finden Sie in der Menüstruktur folgende Hauptabschnitte:
 
 Lab Infos:
   Hier sind generelle Infos bzgl. des Zuganges zur HPoC Umgebung und deren Konfiguration zu finden.
 
-Labs:
+Labs: MS SQL / Postgres 
   Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix ERA Umgebung besser kennenlernen kann, u.a. Einstieg in ERA, Ausrollen von MS SQL Datenbanken, MS SQL AlwaysOn Availability Groups, Clonen von DB's, Verwenden von API's, Nutzen von Flow sowie optionale Postgres DB Labs.
+
+Anhang:
+  Hier sind vorbereitende / zusätzliche Schritte für die Durchführung einiger Labs aufgeführt.
 
 .. note::
    Die Beispiel Labs dienen nur zur ersten Orientierung, weitere individuelle Funktionalitäten können natürlich genauso getested werden.
