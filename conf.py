@@ -18,7 +18,7 @@
 #
 import os
 import sys
-import sphinx_bootstrap_theme
+#import sphinx_bootstrap_theme
 import sphinx_fontawesome
 #sys.path.insert(0, os.path.abspath('..'))
 
@@ -50,9 +50,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Nutanix Databases with Era Bootcamp'
+project = u'Nutanix Databasen mit Era'
 copyright = u'2020 Nutanix'
-author = u'Nutanix Global Technical Enablement'
+author = u'Martin Stenke'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
