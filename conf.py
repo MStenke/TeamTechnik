@@ -34,7 +34,6 @@ import sphinx_fontawesome
 # ones.
 extensions = ['sphinx.ext.todo',
     'sphinx.ext.ifconfig',
-    'sphinxcontrib.fulltoc',
     'sphinx_fontawesome']
 
 # Add any paths that contain templates here, relative to this directory.
