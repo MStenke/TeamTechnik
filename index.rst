@@ -1,4 +1,12 @@
-.. title:: Nutanix Databases with Era Bootcamp
+.. title:: Datenbanken mit Nutanix Era
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Lab Infos
+   :hidden:
+
+   clusteraccess/clusteraccess
+   clusterdetails/clusterdetails
 
 .. toctree::
    :maxdepth: 2
@@ -31,31 +39,29 @@
 
   tools_vms/windows_tools_vm
   tools_vms/linux_tools_vm
-  appendix/glossary
 
 .. _getting_started:
 
 ---------------
-Getting Started
+Nutanix Teamtechnik Hosted PoC
 ---------------
 
-Welcome to the Nutanix Databases with Era Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix technologies and many common management tasks.
+**Herzlich Willkommen auf dem Nutanix Hosted PoC für Teamtechnik!**
 
-You will explore Prism Element and become familiar with its features and navigation. You will use Prism to perform basic cluster administration tasks, including storage and networking. You will also walk through basic VM deployment and management tasks with Prism and AHV. Finally, you will explore VM data protection, including snapshots and replication. The instructor explains the exercises and answers any additional questions that you may have.
+.. figure:: images/tt.png
 
-At the end of the bootcamp, attendees should understand the Core concepts and technologies that make up the Nutanix Enterprise Cloud stack and should be well prepared for a hosted or onsite proof-of-concept (POC) engagement.
+Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste Test auf der Nutanix Plattform, sodass neben den theoretischen Schulungen auch erste praktische Erfahrungen gesammelt werden können wie sich eine Nutanix Plattform im Live Betrieb verhält.
 
-What's New
-++++++++++
+Auf der linken Seite finden Sie in der Menüstruktur zwei Hauptabschnitte:
 
-- Workshop updated for the following software versions:
-    - AOS & PC 5.11.2.x
+HPoC Infos:
+  Hier sind generelle Infos bzgl. des Zuganges zur HPoC Umgebung und deren Konfiguration zu finden.
 
-- Optional Lab Updates:
+Labs:
+  Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix Umgebung besser kennenlernen kann.
 
 Agenda
 ++++++
-
 - Introductions
 - Deploy MSSSql
 - Cloning a Databases
@@ -65,200 +71,14 @@ Agenda
 - Cloning a Postgres DB
 - Era API Explorer
 
-Introductions
-+++++++++++++
-
-- Name
-- Familiarity with Nutanix
-
-Initial Setup
-+++++++++++++
-
-- Take note of the *Passwords* being used.
-- Log into your virtual desktops (connection info below)
-
-Environment Details
-+++++++++++++++++++
-
-Nutanix Workshops are intended to be run in the Nutanix Hosted POC environment. Your cluster will be provisioned with all necessary images, networks, and VMs required to complete the exercises.
-
-Networking
-..........
-
-Hosted POC clusters follow a standard naming convention:
-
-- **Cluster Name** - POC\ *XYZ*
-- **Subnet** - 10.**21**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**21**.\ *XYZ*\ .37
-
-If provisioned from the marketing pool:
-
-- **Cluster Name** - MKT\ *XYZ*
-- **Subnet** - 10.**20**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**20**.\ *XYZ*\ .37
-
-For example:
-
-- **Cluster Name** - POC055
-- **Subnet** - 10.21.55.0
-- **Cluster IP** - 10.21.55.37
-
-Throughout the Workshop there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
-
-.. list-table::
-   :widths: 25 75
-   :header-rows: 1
-
-   * - IP Address
-     - Description
-   * - 10.21.\ *XYZ*\ .37
-     - Nutanix Cluster Virtual IP
-   * - 10.21.\ *XYZ*\ .39
-     - **PC** VM IP, Prism Central
-   * - 10.21.\ *XYZ*\ .40
-     - **DC** VM IP, NTNXLAB.local Domain Controller
-
-Each cluster is configured with 2 VLANs which can be used for VMs:
-
-.. list-table::
-  :widths: 25 25 10 40
-  :header-rows: 1
-
-  * - Network Name
-    - Address
-    - VLAN
-    - DHCP Scope
-  * - Primary
-    - 10.21.\ *XYZ*\ .1/25
-    - 0
-    - 10.21.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
-  * - Secondary
-    - 10.21.\ *XYZ*\ .129/25
-    - *XYZ1*
-    - 10.21.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
-
-Credentials
-...........
-
 .. note::
+   Die Beispiel Labs dienen nur zur ersten Orientierung, weitere individuelle Funktionalitäten können natürlich genauso getested werden.
 
-  The *<Cluster Password>* is unique to each cluster and will be provided by the leader of the Workshop.
+**Mehr Informationen bzgl. Nutanix und Fujitsu, sowie generelle Informationen können hier eingesehen werden:**
 
-.. list-table::
-   :widths: 25 35 40
-   :header-rows: 1
-
-   * - Credential
-     - Username
-     - Password
-   * - Prism Element
-     - admin
-     - *<Cluster Password>*
-   * - Prism Central
-     - admin
-     - *<Cluster Password>*
-   * - Controller VM
-     - nutanix
-     - *<Cluster Password>*
-   * - Prism Central VM
-     - nutanix
-     - *<Cluster Password>*
-
-Each cluster has a dedicated domain controller VM, **DC**, responsible for providing AD services for the **NTNXLAB.local** domain. The domain is populated with the following Users and Groups:
-
-.. list-table::
-   :widths: 25 35 40
-   :header-rows: 1
-   
-   * - Group
-     - Username(s)
-     - Password
-   * - Administrators
-     - Administrator
-     - nutanix/4u
-   * - SSP Admins
-     - adminuser01-adminuser25
-     - nutanix/4u
-   * - SSP Developers
-     - devuser01-devuser25
-     - nutanix/4u
-   * - SSP Consumers
-     - consumer01-consumer25
-     - nutanix/4u
-   * - SSP Operators
-     - operator01-operator25
-     - nutanix/4u
-   * - SSP Custom
-     - custom01-custom25
-     - nutanix/4u
-   * - Bootcamp Users
-     - user01-user25
-     - nutanix/4u
-
-Access Instructions
-+++++++++++++++++++
-
-The Nutanix Hosted POC environment can be accessed a number of different ways:
-
-Lab Access User Credentials
-...........................
-
-PHX Based Clusters:
-**Username:** PHX-POCxxx-User01 (up to PHX-POCxxx-User20), **Password:** *<Provided by Instructor>*
-
-RTP Based Clusters:
-**Username:** RTP-POCxxx-User01 (up to RTP-POCxxx-User20), **Password:** *<Provided by Instructor>*
-
-Frame VDI
-.........
-
-Login to: https://frame.nutanix.com/x/labs
-
-**Nutanix Employees** - Use your **NUTANIXDC** credentials
-**Non-Employees** - Use **Lab Access User** Credentials
-
-Parallels VDI
-.................
-
-PHX Based Clusters Login to: https://xld-uswest1.nutanix.com
-
-RTP Based Clusters Login to: https://xld-useast1.nutanix.com
-
-**Nutanix Employees** - Use your **NUTANIXDC** credentials
-**Non-Employees** - Use **Lab Access User** Credentials
-
-Employee Pulse Secure VPN
-..........................
-
-Download the client:
-
-PHX Based Clusters Login to: https://xld-uswest1.nutanix.com
-
-RTP Based Clusters Login to: https://xld-useast1.nutanix.com
-
-**Nutanix Employees** - Use your **NUTANIXDC** credentials
-**Non-Employees** - Use **Lab Access User** Credentials
-
-Install the client.
-
-In Pulse Secure Client, **Add** a connection:
-
-For PHX:
-
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - X-Labs - PHX
-- **Server URL** - xlv-uswest1.nutanix.com
-
-For RTP:
-
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - X-Labs - RTP
-- **Server URL** - xlv-useast1.nutanix.com
+  - Die Short-Url für diese Dokumentation ist: https://teamtechnik.ntnx.dev/
 
 
-Nutanix Version Info
-++++++++++++++++++++
 
-- **AHV Version** - AHV 20170830.337
-- **AOS Version** - 5.11.2.3
-- **PC Version** - 5.11.2.1
+
+

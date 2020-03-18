@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Nutanix Databasen mit Era'
+project = u'Datenbanken mit Nutanix Era'
 copyright = u'2020 Nutanix'
 author = u'Martin Stenke'
 
