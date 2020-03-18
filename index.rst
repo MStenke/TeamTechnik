@@ -50,7 +50,7 @@ Nutanix Teamtechnik Hosted PoC
 
 .. figure:: images/tt.png
 
-Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste Test auf der Nutanix Plattform, sodass neben den theoretischen Schulungen auch erste praktische Erfahrungen gesammelt werden können wie sich eine Nutanix Plattform im Live Betrieb verhält.
+Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste Test auf der Nutanix ERA Plattform, sodass neben den theoretischen Grundlagen auch erste praktische Erfahrungen gesammelt werden können wie sich eine Nutanix ERA Plattform im Live Betrieb verhält.
 
 Auf der linken Seite finden Sie in der Menüstruktur zwei Hauptabschnitte:
 
@@ -58,25 +58,12 @@ HPoC Infos:
   Hier sind generelle Infos bzgl. des Zuganges zur HPoC Umgebung und deren Konfiguration zu finden.
 
 Labs:
-  Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix Umgebung besser kennenlernen kann.
-
-Agenda
-++++++
-- Introductions
-- Deploy MSSSql
-- Cloning a Databases
-- Setup a AAG
-- Using with Flow
-- Provisioning a Postgres DB
-- Cloning a Postgres DB
-- Era API Explorer
+  Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix ERA Umgebung besser kennenlernen kann, u.a. Einstieg in ERA, Ausrollen von MS SQL Datenbanken, MS SQL AlwaysOn AVailability Groups, Clonen von DB's, Verwenden von API's, Nutzen von Flow sowie optionale Postgres DB Labs.
 
 .. note::
    Die Beispiel Labs dienen nur zur ersten Orientierung, weitere individuelle Funktionalitäten können natürlich genauso getested werden.
 
-**Mehr Informationen bzgl. Nutanix und Fujitsu, sowie generelle Informationen können hier eingesehen werden:**
-
-  - Die Short-Url für diese Dokumentation ist: https://teamtechnik.ntnx.dev/
+Die Short-Url für diese Dokumentation ist: https://teamtechnik.ntnx.dev/
 
 
 
