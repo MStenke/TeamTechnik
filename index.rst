@@ -10,7 +10,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Databases
+   :caption: Datenbank Labs
    :name: _dbs
    :hidden:
 
@@ -33,7 +33,7 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Appendix
+  :caption: Anhang
   :name: _appendix
   :hidden:
 
@@ -53,7 +53,7 @@ Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste
 
 Auf der linken Seite finden Sie in der Menüstruktur zwei Hauptabschnitte:
 
-HPoC Infos:
+Lab Infos:
   Hier sind generelle Infos bzgl. des Zuganges zur HPoC Umgebung und deren Konfiguration zu finden.
 
 Labs:
