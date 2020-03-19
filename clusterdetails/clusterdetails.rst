@@ -12,7 +12,7 @@ Cluster Hardware Details
 .. figure:: images/cluster3060g5a.png
 
 .. note::
-  Bedenken Sie bitte, dass diese Testumgebung zum einen nicht auf der neuesten Hardware basiert und das zum anderen auf Grund der Entfernung zum Lab-Datacenter entsprechende Latenzen auftreten können. Nichtsdestotrotz lassen sich mit dieser Umgebung die typischen Routineaufgaben bzgl. einer Nutanix-Cluster-Plattform mit einer ausgezeichneten User-Experience testen.
+  Bedenken Sie bitte, dass diese Testumgebung zum einen nicht auf der neuesten Hardware basiert und das zum anderen auf Grund der Entfernung zum Lab-Datacenter entsprechende Latenzen auftreten können. Nichtsdestotrotz lassen sich mit dieser Umgebung die typischen Routineaufgaben bzgl. einer Nutanix-Cluster-Plattform mit dem sehr guten Benutzererlebnis testen.
 
 Infrastruktur IPs
 +++++++++++++
@@ -30,7 +30,7 @@ Infrastruktur IPs
      - 10.42.24.25
      - 10.42.24.33
    * - **Position B**
-     - 10.42.24.2
+     - 10.42.24.30
      - 10.42.24.26
      - 10.42.24.34
    * - **Position C**
@@ -202,7 +202,7 @@ Die folgenden virtuellen Netzwerke wurden wie folgt vorkonfiguriert:
      - **Sekundäres** Netzwerk
    * - **VLAN**
      - 0
-     - 1933
+     - 241
    * - **Netzwerk IP Adresse**
      - 10.42.24.0
      - 10.42.24.128
