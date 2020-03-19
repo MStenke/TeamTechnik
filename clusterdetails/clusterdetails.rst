@@ -69,7 +69,7 @@ Die folgenden VMs wurden bereits auf dem Cluster ausgerollt:
    * - **Prism Central**
      - 10.42.24.39
      - Nutanix Prism Central
-   * - **AutoDC2**
+   * - **AutoAD**
      - 10.42.24.41
      - ntnxlab.local Domain Controller
 
@@ -86,45 +86,30 @@ Die folgenden Disk-Images & ISOs wurden bereits im Vorfeld auf den Cluster hochg
    * - Image-Name
      - Typ
      - Beschreibung
-   * - **CentOS7.iso**
-     - ISO
-     - Ein CentOS7 ISO
+   * - **AutoAD**
+     - DISK
+     - Das Active Directory Disk Image.
    * - **CentOS7.qcow2**
      - DISK
-     - Ein bereits vorgefertigtes CentOS 7 Disk Image
-   * - **hycu-3.5.0-6253.qcow2**
+     - Ein bereits vorgefertigtes CentOS 7 Disk Image.
+   * - **ERA-Server-build-1.2.1.qcow2**
      - DISK
-     - Ein bereits vorgefertigtes HYCU Disk Image
+     - Ein Nutanix ERA Disk Image.
    * - **Linux_ToolsVM.qcow2**
      - DISK
-     - Ein vorkonfiguriertes Linux Image  + Tools Disk Image
+     - Ein vorkonfiguriertes Linux Image  + Tools Disk Image.
    * - **MSSQL-2016-VM.qcow2**
      - DISK
      - Ein Windows Server 2016 Standard Image mit MS SQL 2016 vorinstalliert.
-   * - **Nutanix-VirtIO-1.1.3.iso**
+   * - **Nutanix-VirtIO-1.1.5.iso**
      - ISO
      - Ein ISO mit den Nutanix VM Treibern.
-   * - **ToolsVM.qcow2**
-     - DISK
-     - Ein vorkonfiguriertes Windows Server 2012 R2 + Tools (pgAdmin, CyberDuck, text editors, etc.) Disk Image
-   * - **Windows10-1709.qcow2**
-     - DISK
-     - Ein Windows 10 Disk Image.
-   * - **Windows10.iso**
-     - ISO
-     - Eine Windows 10 ISO.
-   * - **Windows2012R2.iso**
-     - ISO
-     - Eine Windows2012 ISO.
-   * - **Windows2012R2.qcow2**
-     - DISK
-     - Ein Windows2012 Disk Image.
-   * - **Windows2016.iso**
-     - ISO
-     - Ein Windows2016 ISO
    * - **Windows2016.qcow2**
      - DISK
-     - Ein Windows2016 Disk Image
+     - Ein Windows2016 Disk Image.
+   * - **WinToolsVM.qcow2**
+     - DISK
+     - Ein vorkonfiguriertes Windows Server 2012 R2 + Tools (pgAdmin, CyberDuck, Text Editoren, etc.) Disk Image.
 
 
 
@@ -222,6 +207,6 @@ Die folgenden virtuellen Netzwerke wurden wie folgt vorkonfiguriert:
      - NTNXLAB.local
      - NTNXLAB.local
    * - **DNS**
-     - 10.42.24.41 (DC VM)
-     - 10.42.24.41 (DC VM)
+     - 10.42.24.41 (AD VM)
+     - 10.42.24.41 (AD VM)
    
