@@ -69,6 +69,9 @@ Die folgenden VMs wurden bereits auf dem Cluster ausgerollt:
    * - **Prism Central**
      - 10.42.24.39
      - Nutanix Prism Central
+   * - **EraServer**
+     - 10.42.24.22
+     - Nutanix ERA VM
    * - **AutoAD**
      - 10.42.24.41
      - ntnxlab.local Domain Controller
