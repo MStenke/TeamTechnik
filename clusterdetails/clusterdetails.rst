@@ -142,7 +142,7 @@ Die folgende Tabelle führt die standardmäßig hinterlegten Zugangsdaten für d
     - ntnx4Team!
   * - **Prism Central VM**
     - nutanix
-    - ntnx4Team!
+    - nutanix/4u
   * - **NTNXLAB Domain**
     - NTNXLAB\\Administrator
     - nutanix/4u
