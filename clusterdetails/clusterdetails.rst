@@ -143,6 +143,9 @@ Die folgende Tabelle führt die standardmäßig hinterlegten Zugangsdaten für d
   * - **Prism Central VM**
     - nutanix
     - nutanix/4u
+  * - **Nutanix ERA**
+    - admin
+    - nutanix/4u
   * - **NTNXLAB Domain**
     - NTNXLAB\\Administrator
     - nutanix/4u
