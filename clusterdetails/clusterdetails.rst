@@ -157,20 +157,26 @@ Darüber hinaus besitzt der Cluster eine dedizierte Domain-Controller-VM, welche
   * - Gruppe
     - Benutzername(n)
     - Passwort
-  * - **Administrators**
+  * - **Administrators / Domain Admins**
     - Administrator
     - nutanix/4u
+  * - **Bootcamp Users**
+    - User01-User25
+    - nutanix/4u
   * - **SSP Admins**
-    - adminuser01-adminuser25
+    - Adminuser01-Adminuser25
+    - nutanix/4u
+  * - **SSP Operators**
+    - Operator01-Operator25
     - nutanix/4u
   * - **SSP Developers**
-    - devuser01-devuser25
+    - Devuser01-Devuser25
     - nutanix/4u
-  * - **SSP Power Users**
-    - poweruser01-poweruser25
+  * - **SSP Consumers**
+    - Consumer01-Consumer25
     - nutanix/4u
-  * - **SSP Basic Users**
-    - basicuser01-basicuser25
+  * - **SSP Custom**
+    - Custom01-Custom25
     - nutanix/4u
 
 Netzwerk
