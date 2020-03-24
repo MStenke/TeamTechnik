@@ -113,7 +113,7 @@ Era is distributed as a virtual appliance that can be installed on either AHV or
 
 #. In **Prism Central > VMs > List**, identify the IP address assigned to the **EraServer-\*** VM using the **IP Addresses** column.
 
-#. Open \https://*ERA-VM-IP:8443*/ in a new browser tab.
+#. Open \https://*10.42.24.22:8443*/ in a new browser tab.
 
 #. Login using the following credentials:
 
