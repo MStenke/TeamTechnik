@@ -56,7 +56,7 @@ In this lab you will leverage multiple pre-built Calm Blueprints to provision yo
    - Under **Infrastructure**, select **Select Provider > Nutanix**
    - Click **Select Clusters & Subnets**
    - Select *Your Assigned Cluster*
-   - Under **Subnets**, select **Primary**, **Secondary**, and click **Confirm**
+   - Under **Subnets**, select **Primary**, **EraManaged**, and click **Confirm**
    - Mark **Primary** as the default network by clicking the :fa:`star`
 
    .. figure:: images/3.png
@@ -87,7 +87,7 @@ Some exercises in this track will depend on leveraging the Windows Tools VM. Fol
       - Select **Add**
 
    - Select **Add New NIC**
-      - **VLAN Name** - ERAmanaged
+      - **VLAN Name** - EraManaged
       - Ip Address: 10.42.24.134 (ERA managed range starts from .140)
       - Select **Add**
 
