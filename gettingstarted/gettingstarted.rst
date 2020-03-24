@@ -87,7 +87,8 @@ Some exercises in this track will depend on leveraging the Windows Tools VM. Fol
       - Select **Add**
 
    - Select **Add New NIC**
-      - **VLAN Name** - Secondary
+      - **VLAN Name** - ERAmanaged
+      - Ip Address: 10.42.24.134 (ERA managed range starts from .140)
       - Select **Add**
 
 #. Click **Save** to create the VM.

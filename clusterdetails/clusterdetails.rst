@@ -211,7 +211,7 @@ Die folgenden virtuellen Netzwerke wurden wie folgt vorkonfiguriert:
      - 10.42.24.129
    * - **IP Address Management (IPAM)**
      - Aktiviert
-     - Aktiviert
+     - Deaktiviert
    * - **DHCP Pool**
      - 10.42.24.50  - 125
      - 10.42.24.132 - 253

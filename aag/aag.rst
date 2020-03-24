@@ -19,24 +19,15 @@ Creating an Era Managed Network
 
 #. Fill out the following fields and click **Add**:
 
-   .. note:: The network configuration below should roughly match the addressing below.
-       In most cases:
-
-       - "Gateway" will be 10.x.x.129
-       - "Subnet Mask" will be 255.255.255.128
-       - "Primary DNS" will be 10.x.x.41
-       - "First Address" will be 10.x.x.129
-       - "Last Address" will be 10.x.x.253
-
    - **Select a VLAN** - EraManaged
    - Select **Manage IP Address Pool**
-   - **Gateway** - *Refer to Network Info Provided by Bootcamps Leader*
+   - **Gateway** - 10.42.24.129
    - Select **Verify**
-   - **Subnet Mask** - *Refer to Network Info Provided by Bootcamps Leader*
-   - **Primary DNS** - *Refer to Network Info Provided by Bootcamps Leader*
+   - **Subnet Mask** - 255.255.255.128
+   - **Primary DNS** - 10.42.24.41
    - **DNS Domain** - ntnxlab.local
-   - **First Address** - *Refer to Network Info Provided by Bootcamps Leader*
-   - **Last Address** - *Refer to Network Info Provided by Bootcamps Leader*
+   - **First Address** - 10.42.24.140
+   - **Last Address** - 10.42.24.253
 
    .. figure:: images/4.png
 
