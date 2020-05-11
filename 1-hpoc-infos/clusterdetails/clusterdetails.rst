@@ -135,7 +135,7 @@ Netzwerk
 Die folgenden virtuellen Netzwerke wurden wie folgt vorkonfiguriert:
 
 .. list-table::
-   :widths: 20 20 20 20
+   :widths: 20 12 12 12
    :header-rows: 1
 
    * -
