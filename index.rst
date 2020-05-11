@@ -55,17 +55,21 @@ Herzlich willkommen auf dem Nutanix Hosted PoC
 
 .. figure:: images/Intro.png
 
-Diese Nutanix Hosted PoC Webseite führt Sie Schritt für Schritt durch die verschiedenen Labs, sodass Sie eine umfassende praktische Einführung in die Nutanix Technologie erhalten. Als Erstes lernen Sie Prism Element kennen und werden mit dessen Funktionen und der Benutzerführung vertraut. Sie werden in diesem Lab Prism Element nutzen um Basis Cluster Administrations-Aufgaben (inkl. Storage und Netzwerk Verwaltung) sowie Basis VM-Deployments und Management-Aufgaben mit Prism und AHV durchzuführen. Weiter werden Sie VM Data Protection Optionen wie Snapshots und Replikationen sowie erweiterte Cluster Funktionalitäten mit Prism Central kennenlernen.
+Diese Nutanix Hosted PoC Webseite führt Sie Schritt für Schritt durch die verschiedenen Labs, sodass Sie eine umfassende praktische Einführung in die Nutanix Technologie erhalten. 
 
-Der Hosted PoC  besteht primär aus folgenden Hauptbestandteilen:
+In der Vergangenheit war die Virtualisierung von Microsoft SQL Server aufgrund der hohen Kosten herkömmlicher Virtualisierungsstacks und der Auswirkungen einer SAN-basierten Architektur auf die Leistung eine Herausforderung. Unternehmen und ihre IT-Abteilungen haben ständig darum gekämpft, Kosten, einfache Bedienung und konsistente vorhersehbare Leistung in Einklang zu bringen.
+Die Nutanix Enterprise Cloud beseitigt viele dieser Herausforderungen und erleichtert die Virtualisierung einer geschäftskritischen Anwendung wie SQL Server erheblich. Das Acropolis Distributed Storage Fabric (DSF) ist eine softwaredefinierte Lösung, die alle Funktionen bietet, die normalerweise in einem Unternehmens-SAN erwartet werden, ohne die physischen Einschränkungen und Engpässe eines SAN.
 
-Teil 1: Era with MSSQL
-  Generelle EInführung in Nutanix ERA, ausrollen & registrieren von MS SQL in ERA, sowie Basis Administration mit Nutanix ERA.
+In den Labs werden primär folgende Nutanix Produkte verwendet:
+	Prism
+	AOS
+	Era
+	Flow
 
-Teil 2: Creating an App with Era
-  Erweiterte & tieferer Einstieg in Nutanix ERA mit typischen Routine-Aufgaben für MS SQL.
-
-Teil 3: Optionale Labs
-  Erweiterter Funktionsumfang mit Nutanix Flow zur Applikations & Datenbank Sicherung / Isolation, sowie Automatisierung durch REST API's.
+Thematisch werden folgende Themen abgedeckt:
+	Deploying MS SQL with Era
+	Time Machine, Cloning, and APIs
+	Securing Applications with Flow
+	Isolationing Databases with Flow
 
 **Haben wir Ihr Interesse geweckt? Dann lassen Sie uns beginnen!**

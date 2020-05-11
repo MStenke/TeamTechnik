@@ -54,6 +54,8 @@ Infrastruktur IPs
     - 10.42.75.37
   * - **iSCSI Data Services IP**
     - 10.42.75.38
+  * - **Prism Central**
+    - 10.42.75.39
   * - **ERA VM IP**
     - 10.42.75.22
 
@@ -133,7 +135,7 @@ Netzwerk
 Die folgenden virtuellen Netzwerke wurden wie folgt vorkonfiguriert:
 
 .. list-table::
-   :widths: 33 33 33 33
+   :widths: 20 20 20 20
    :header-rows: 1
 
    * -
