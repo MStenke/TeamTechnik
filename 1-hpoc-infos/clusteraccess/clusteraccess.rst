@@ -10,11 +10,6 @@ Zugangs Übersicht
 Die Lab Umgebung stehen physisch in der USA. Um auf diese zugreifen zu können wird ein Remote Zugriff benötigt.
 Hierfür stehen 3 Optionen zur Auswahl: **Nutanix Frame VDI**, **Pulse VPN** *oder* **Parallel VDI Zugang.**
 
-Die Lab-Zugangsdaten sind folgende:
-
-- **Benutzername**: 
-- **Password**: 
-
 Frame VDI Client
 ++++++++++++++++
 

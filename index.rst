@@ -61,12 +61,14 @@ In der Vergangenheit war die Virtualisierung von Microsoft SQL Server aufgrund d
 Die Nutanix Enterprise Cloud beseitigt viele dieser Herausforderungen und erleichtert die Virtualisierung einer geschäftskritischen Anwendung wie SQL Server erheblich. Das Acropolis Distributed Storage Fabric (DSF) ist eine softwaredefinierte Lösung, die alle Funktionen bietet, die normalerweise in einem Unternehmens-SAN erwartet werden, ohne die physischen Einschränkungen und Engpässe eines SAN.
 
 **In den Labs werden primär folgende Nutanix Produkte verwendet:**
+
 - Prism
 - AOS
 - Era
 - Flow
 
 **Thematisch werden folgende Themen abgedeckt:**
+
 - Deploying MS SQL with Era
 - Time Machine, Cloning, and APIs
 - Securing Applications with Flow
