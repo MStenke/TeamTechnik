@@ -1,73 +1,71 @@
-.. title:: Datenbanken mit Nutanix Era
+.. title:: Team Technik Hosted PoC
 
 .. toctree::
    :maxdepth: 2
-   :caption: Lab Infos
+   :caption: Hosted PoC Infos
    :hidden:
 
-   clusteraccess/clusteraccess
-   clusterdetails/clusterdetails
+   1-hpoc-infos/ansprechpartner/ansprechpartner
+   1-hpoc-infos/clusteraccess/clusteraccess
+   1-hpoc-infos/clusterdetails/clusterdetails
 
 .. toctree::
    :maxdepth: 2
-   :caption: MS SQL Labs
+   :caption: Era mit MSSQL
    :name: _dbs
    :hidden:
 
-   gettingstarted/gettingstarted
-   mssqldeploy/mssqldeploy
-   cloning/cloning
-   aag/aag
-   flow_secure_fiesta/flow_secure_fiesta
-   flow_isolate_fiesta/flow_isolate_fiesta
+   2-ERA-MSSQL/labsetup/labsetup
+   2-ERA-MSSQL/deploy_mssql/deploy_mssql
+   2-ERA-MSSQL/admin_mssqldb/admin_mssqldb
 
 .. toctree::
-  :maxdepth: 2
-  :caption: Postgres Labs
-  :name: _era_postgres_labs
-  :hidden:
+   :maxdepth: 2
+   :caption: Creating an App with Era
+   :name: _apps_with_era
+   :hidden:
 
-  era_provision_postgresdb/era_provision_postgresdb
-  era_clone_postgresdb/era_clone_postgresdb
-  era_rest_api/era_rest_api
+   2-ERA-MSSQL/deploy_mssql_era/deploy_mssql_era
+   2-ERA-MSSQL/aag/aag
+   2-ERA-MSSQL/cloning_with_calm/cloning_with_calm
 
 .. toctree::
-  :maxdepth: 2
-  :caption: Anhang
-  :name: _appendix
-  :hidden:
+   :maxdepth: 2
+   :caption: Optionale Labs
+   :name: _optional_labs
+   :hidden:
 
-  tools_vms/windows_tools_vm
-  tools_vms/linux_tools_vm
+   2-ERA-MSSQL/flow_secure_fiesta/flow_secure_fiesta
+   2-ERA-MSSQL/flow_isolate_fiesta/flow_isolate_fiesta
+   2-ERA-MSSQL/era_rest_api/era_rest_api
+  
+.. toctree::
+   :maxdepth: 2
+   :caption: Anhang Labs
+   :hidden:
+
+   tools_vms/windows_tools_vm
+   tools_vms/linux_tools_vm
 
 .. _getting_started:
 
----------------
-Nutanix Teamtechnik Hosted PoC
----------------
-.. figure:: images/tt.png
+----------------------------------------------
+Herzlich willkommen auf dem Nutanix Hosted PoC
+----------------------------------------------
 
-**Herzlich Willkommen auf dem Nutanix Hosted PoC für Teamtechnik!**
+.. figure:: images/Intro.png
 
-Die hier zur Verfügung gestellte Lab Umgebung dient als "Spielwiese" für erste Test auf der Nutanix ERA Plattform, sodass neben den theoretischen Grundlagen auch erste praktische Erfahrungen gesammelt werden können wie sich eine Nutanix ERA Plattform im Live Betrieb verhält.
+Diese Nutanix Hosted PoC Webseite führt Sie Schritt für Schritt durch die verschiedenen Labs, sodass Sie eine umfassende praktische Einführung in die Nutanix Technologie erhalten. Als Erstes lernen Sie Prism Element kennen und werden mit dessen Funktionen und der Benutzerführung vertraut. Sie werden in diesem Lab Prism Element nutzen um Basis Cluster Administrations-Aufgaben (inkl. Storage und Netzwerk Verwaltung) sowie Basis VM-Deployments und Management-Aufgaben mit Prism und AHV durchzuführen. Weiter werden Sie VM Data Protection Optionen wie Snapshots und Replikationen sowie erweiterte Cluster Funktionalitäten mit Prism Central kennenlernen.
 
-Auf der linken Seite finden Sie in der Menüstruktur folgende Hauptabschnitte:
+Der Hosted PoC  besteht primär aus folgenden Hauptbestandteilen:
 
-Lab Infos:
-  Hier sind generelle Infos bzgl. des Zuganges zur HPoC Umgebung und deren Konfiguration zu finden.
+Teil 1: Era with MSSQL
+  Generelle EInführung in Nutanix ERA, ausrollen & registrieren von MS SQL in ERA, sowie Basis Administration mit Nutanix ERA.
 
-Labs: MS SQL / Postgres 
-  Hier sind ein paar Beispiel-Labs aufgezeigt wie man Schritt für Schitt die Nutanix ERA Umgebung besser kennenlernen kann, u.a. Einstieg in ERA, Ausrollen von MS SQL Datenbanken, MS SQL AlwaysOn Availability Groups, Clonen von DB's, Verwenden von API's, Nutzen von Flow sowie optionale Postgres DB Labs.
+Teil 2: Creating an App with Era
+  Erweiterte & tieferer Einstieg in Nutanix ERA mit typischen Routine-Aufgaben für MS SQL.
 
-Anhang:
-  Hier sind vorbereitende / zusätzliche Schritte für die Durchführung einiger Labs aufgeführt.
+Teil 3: Optionale Labs
+  Erweiterter Funktionsumfang mit Nutanix Flow zur Applikations & Datenbank Sicherung / Isolation, sowie Automatisierung durch REST API's.
 
-.. note::
-   Die Beispiel Labs dienen nur zur ersten Orientierung, weitere individuelle Funktionalitäten können natürlich genauso getested werden.
-
-Die Short-Url für diese Dokumentation ist: https://teamtechnik.ntnx.dev/
-
-
-
-
-
+**Haben wir Ihr Interesse geweckt? Dann lassen Sie uns beginnen!**
