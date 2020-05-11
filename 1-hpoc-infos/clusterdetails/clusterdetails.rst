@@ -135,42 +135,33 @@ Netzwerk
 Die folgenden virtuellen Netzwerke wurden wie folgt vorkonfiguriert:
 
 .. list-table::
-   :widths: 20 12 12 12
+   :widths: 33 33 33
    :header-rows: 1
 
    * -
      - **Primäres** Netzwerk
      - **Sekundäres** Netzwerk
-	 - **EraManaged** Netzwerk
    * - **VLAN**
      - 0
      - 751
-	 - 751
    * - **Netzwerk IP Adresse**
      - 10.42.75.0
      - 10.42.75.128
-	 - unkonfiguriert
    * - **Netzmaske**
      - 255.255.255.128 (/25)
      - 255.255.255.128 (/25)
-	 - unkonfiguriert
    * - **Default Gateway**
      - 10.42.75.1
      - 10.42.75.129
-	 - unkonfiguriert
    * - **IP Address Management (IPAM)**
      - Aktiviert
      - Aktiviert
-	 - unkonfiguriert
    * - **DHCP Pool**
      - 10.42.75.50  - 125
      - 10.42.75.132 - 219
-	 - unkonfiguriert
    * - **Domain**
      - NTNXLAB.local
      - NTNXLAB.local
-	 - unkonfiguriert
    * - **DNS**
      - 10.42.75.41 (DC VM)
      - 10.42.75.41 (DC VM)
-	 - unkonfiguriert
